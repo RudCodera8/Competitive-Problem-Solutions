@@ -1,0 +1,10 @@
+a=input().split()
+b=input().split()
+alices=0
+bob=0
+for i in range(len(a)):
+    if int(a[i])>int(b[i]):
+        alices+=1
+    if int(a[i])<int(b[i]):
+        bob+=1
+print(alices,bob)
