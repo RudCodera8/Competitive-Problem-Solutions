@@ -4,8 +4,8 @@ nterms = 100
 #nterms = int(input("How many terms? "))
 
 # first two terms
-n1 = 0
-n2 = 1
+a = 0
+b = 1
 count = 0
 
 # check if the number of terms is valid
@@ -13,13 +13,13 @@ if nterms <= 0:
    print("Please enter a positive integer")
 elif nterms == 1:
    print("Fibonacci sequence upto",nterms,":")
-   print(n1)
+   print(a)
 else:
    print("Fibonacci sequence upto",nterms,":")
    while count < nterms:
-       print(n1,end=' , ')
-       nth = n1 + n2
+       print(a,end=' , ')
+       nth = a + b
        # update values
-       n1 = n2
-       n2 = nth
+       a = b
+       b = nth
        count += 1
